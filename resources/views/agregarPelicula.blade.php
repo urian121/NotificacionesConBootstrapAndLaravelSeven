@@ -8,7 +8,7 @@
     <title>Notificación con Bootstrap y Laravel :: WebDeveloper Urian Viera</title>
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
 
-    <!---Notificaciones en Bootstrap ---->
+    <!---css para las Notificaciones  ---->
     <link rel="stylesheet" href="{{ asset('css/Lobibox.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/notifications.css') }}">
 </head>
@@ -118,6 +118,7 @@
 <script src="{{ asset('js/jquery-3.5.1.js') }}"></script>  
 <script src="{{ asset('js/bootstrap.min.js') }}"></script> 
 
+<!-- Libreria js para las Notificaciones -->
 <script src="{{ asset('js/Lobibox.js') }}"></script>
 <script src="{{ asset('js/notification-active.js') }}"></script>
 

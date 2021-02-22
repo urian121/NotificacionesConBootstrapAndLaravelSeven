@@ -14,7 +14,7 @@ public function notificaciones(){
     return view('home');
 }
 
-public function vistaRegistrarAlumno(){
+public function vistaRegistrarPelicula(){
 
     $peliculas = Peliculas::orderBy('id', 'DESC')->get();
     return view('agregarPelicula', compact('peliculas','peliculas'));
@@ -26,7 +26,7 @@ public function registrarPelicula(Request $request){
     $DatosPelicula = new Peliculas();
 
      $DatosPelicula->nombre     = $request->nombre;
-     $DatosPelicula->genero       = $request->genero;
+     $DatosPelicula->genero     = $request->genero;
      $DatosPelicula->year       = $request->year;
 
     $DatosPelicula->save();

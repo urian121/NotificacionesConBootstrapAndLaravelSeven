@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
 
 
-    <!---Notificaciones en Bootstrap ---->
+    <!---Css para las Notificaciones ---->
     <link rel="stylesheet" href="{{ asset('css/Lobibox.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/notifications.css') }}">
 </head>
@@ -31,7 +31,7 @@
             <img src="{{ asset('img/laravel.png') }}" style="width: 120px">
         <span style="color: coral">:: Web Developer Urian Viera </span>
          <strong>
-            <a href="{{ route('vistaRegistrarAlumno') }}" class="btn btn-success" title="demo">Demo Notificación</a>
+            <a href="{{ route('vistaRegistrarPelicula') }}" class="btn btn-success" title="demo">Demo Notificación</a>
          </strong>
     </h3>
     <hr>
@@ -229,7 +229,7 @@
 <script src="{{ asset('js/jquery-3.5.1.js') }}"></script>  
 <script src="{{ asset('js/bootstrap.min.js') }}"></script> 
 
-<!-- Libreria js para las Alertas -->
+<!-- Libreria js para las Notificaciones -->
 <script src="{{ asset('js/Lobibox.js') }}"></script>
 <script src="{{ asset('js/notification-active.js') }}"></script>
 
