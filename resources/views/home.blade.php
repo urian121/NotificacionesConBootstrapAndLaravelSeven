@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link type="text/css" rel="shortcut icon" href="{{ asset ('img/logo-mywebsite-urian-viera.svg') }}"/>
-    <title>Borrar Multiple Registro en Laravel con Ajax :: WebDeveloper Urian Viera</title>
+    <title>Notificaciones con Bootstrap :: WebDeveloper Urian Viera</title>
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
 
 
-<!---Notificaciones en Bootstrap ---->
-<link rel="stylesheet" href="{{ asset('css/Lobibox.min.css') }}">
-<link rel="stylesheet" href="{{ asset('css/notifications.css') }}">
+    <!---Notificaciones en Bootstrap ---->
+    <link rel="stylesheet" href="{{ asset('css/Lobibox.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/notifications.css') }}">
 </head>
 <body>
 
@@ -25,16 +25,21 @@
 <div class="container top">
     <h3 class="text-center mt-5">
         <br>
-        <span style="color: green"> Notificaciones con</span> 
-        <span style="color: #563d7c; font-weight:bold;"> Bootstrap </span>
+        <span style="color: green"> Notificaciones <strong style="color: crimson;">(Alertas)</strong> </span> con
+            <img src="{{ asset('img/bootstrap.png') }}" style="width: 100px;">
+        <strong>+</strong>
+            <img src="{{ asset('img/laravel.png') }}" style="width: 120px">
         <span style="color: coral">:: Web Developer Urian Viera </span>
+         <strong>
+            <a href="{{ route('vistaRegistrarAlumno') }}" class="btn btn-success" title="demo">Demo Notificación</a>
+         </strong>
     </h3>
     <hr>
 
 
-
     <div class="notification-area">
         <div class="container-fluid">
+
             <div class="row">
                 <div class="col-lg-6">
                     <div class="notification-list shadow-reset nt-mg-b-30">
@@ -109,6 +114,7 @@
                         </div>
                     </div>
                 </div>
+                
                 <div class="col-lg-6">
                     <div class="notification-list shadow-reset nt-mg-b-30">
                         <div class="alert-title">
@@ -212,8 +218,6 @@
             </div>
         </div>
     </div>
-    <!-- Notification End-->
-
 
 
 
@@ -222,12 +226,13 @@
 </div>
 
 
-
 <script src="{{ asset('js/jquery-3.5.1.js') }}"></script>  
 <script src="{{ asset('js/bootstrap.min.js') }}"></script> 
 
+<!-- Libreria js para las Alertas -->
 <script src="{{ asset('js/Lobibox.js') }}"></script>
 <script src="{{ asset('js/notification-active.js') }}"></script>
+
 
 </body>
 </html>

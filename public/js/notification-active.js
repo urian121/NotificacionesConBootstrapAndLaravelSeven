@@ -207,6 +207,7 @@
                     msg: 'Lorem ipsum dolor sit amet against apennine any created, spend loveliest, building stripes.'
                 });
             });
+            
             $('#basicSuccessCustomDelay').on('click', function () {
                 Lobibox.notify('success', {
                     delay: 15000,
