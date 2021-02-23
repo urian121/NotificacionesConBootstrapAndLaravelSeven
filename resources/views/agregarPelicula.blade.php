@@ -124,12 +124,13 @@
 
 @if (session('mensaje'))
 <script type="text/javascript">
-Lobibox.notify(
-    'success',{
-    //img: 'notificaciones/img/error.png',
-    title: 'Felicitaciones',
-    msg: 'Pelicula Registrada Correctamente...'
-});
+
+    Lobibox.notify('success', {
+        width: 600,
+        position: 'top left',
+        title: 'Felicitaciones !!',
+        msg: 'Pelicula Registrada.'
+     });
 
 </script>
 @endif
